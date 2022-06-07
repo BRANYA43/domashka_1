@@ -1,9 +1,11 @@
 x = ''
 y = ''
 
-while not x.isdigit() and not y.isdigit():
-    x = input('Введите число для x: ')
-    y = input('Введите число для y: ')
+while not x.isdigit() or not y.isdigit():
+    if not x.isdigit():
+        x = input('Введите число для x: ')
+    if not y.isdigit():
+        y = input('Введите число для y: ')
 
 x = int(x)
 y = int(y)
